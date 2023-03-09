@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Todo.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container"><!-- Todo list body -->
+        <div class="todo-box">
+            <h1 class="heading">ToDo List</h1>
+            <div class="inputbox">
+                <i class="icon uil uil-file-check-alt"></i><!-- file icon  -->
+                <input type="text" placeholder="Type here.....">
+                <i id="addbutton" class="icon uil uil-plus"></i><!-- Add (plus) icon  -->
+            </div>
+            <div class="clckbutton">
+                <button class=" btn clearall">Clear all task</button>
+                <button class=" btn clearcomtask">Clear Complete</button>
+            </div>
+            <hr>
+            <ul class="itemlist"></ul><!-- Empty Unorder Todolist for add list item -->
+            <hr>
+            <div class="clckbutton">
+                <span>
+                    <span class="pendingTasks"></span><!--Empty span for task count -->
+                    tasks left</span>
+                <div>
+                    <button class=" btn complete">All Complete</button>
+                    <button class=" btn uncomplete">All Uncomplete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Todo.js"></script>
+</body>
+
+</html>
